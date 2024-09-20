@@ -3,28 +3,49 @@ import { useEffect, useState } from 'react'
 
 function Component() {
 
-    const [img, setimg] = useState({})
-
-
-    useState(() => {
-        return () => {
-            img && URL.revokeObjectURL(img.preview)
+    const course = [
+        {
+            id: 1,
+            content: 'Khoa hoc 1'
+        },
+        {
+            id: 2,
+            content: 'Khoa hoc 2'
+        },
+        {
+            id: 3,
+            content: 'Khoa hoc 3'
         }
-    }, [img])
-    const handlerFile = (e) => {
-        const file = e.target.files[0]
-        file.preview = URL.createObjectURL(file)
-        setimg(file)
-    }
+    ]
+
+    const [high, sethigh] = useState(1)
+    
+    useEffect(() => {
+        const handlerComment = ( {detail} ) => {
+            console.log(detail)
+        }
+        
+        window.addEventListener(`lession-${high}`, handlerComment )
+        return () => {
+            window.removeEventListener(`lession-${high}`, handlerComment)
+        }
+        
+    }, [high])
+        
+
 
     return (
         <div>
-            <input
-                type = 'file'
-                onChange= {handlerFile}
-            />
-            {img && (<img src={img.preview} />)}
-            
+            {course.map((id) => (
+                <li
+                    style={{color: high === id.id ?
+                        'red':
+                        'black'
+                    }}
+                    onClick = {() => sethigh(id.id)}
+                    key = {id.id}
+                >{id.content}</li>
+            ))}
         </div>
     )
 
