@@ -1,27 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react'
-import Component from './content';
-
-
-
-
-
-
-
+import { useState , useContext } from 'react'
+import Paragrap from './para';
+import {Context} from './ThemeContext';
 
 function App() { 
-  const [mou, getmou] = useState(false)
-  const check = () => {
-    return getmou(!mou)
-  }
-
-
-
+  const attr = useContext(Context)
   return (
     <div class = "App">
-      <button onClick={check}>Toggle</button>
-      {mou && <Component/>}
+      <button onClick={attr.handlerClick}>Toggle</button>
+      <Paragrap />
     </div>
   );
 }
