@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {ThemeContext} from './ThemeContext';
+import { StoreProvider } from './store';
 
 // create event listener
 //use to custom event 
@@ -12,9 +12,9 @@ import {ThemeContext} from './ThemeContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeContext>
+    <StoreProvider>
       <App />
-    </ThemeContext>
+    </StoreProvider>
   </React.StrictMode>
 );
 
