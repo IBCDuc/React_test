@@ -1,0 +1,13 @@
+.headingWithSeparator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.headingWithSeparator h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 20px; /* Khoảng cách giữa text và separator */
+}
+

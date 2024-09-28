@@ -1,0 +1,38 @@
+.slide a img {
+    width: 1476px;
+    height: 461px;
+}
+
+.MultiDisplay {
+    position: relative;
+    text-align: center;
+    color: aliceblue;
+}
+
+.TextOnImg {
+    position: absolute;
+    top: 175px;
+    left: 233px;
+}
+.pagination {
+    display: flex;
+    color:rgb(228, 228, 228);
+    gap: 10px;
+    position: absolute;
+    top: 485px;
+    left: 80px;
+    list-style-type: none;
+}
+.pagination li button {
+    background : #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    border: #000;
+}
+
+.pagination li button:hover {
+    background : #884c4c;
+}
