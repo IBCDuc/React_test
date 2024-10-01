@@ -1,7 +1,10 @@
 @import 'normalize.css' ;
-
+@font-face {
+    font-family: Roboto;
+    src: url('../../../public/RobotoCondensed-Regular.woff')
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto;
 }
 
 * {

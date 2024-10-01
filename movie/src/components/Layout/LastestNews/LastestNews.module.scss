@@ -1,0 +1,36 @@
+.wrapper {
+    min-height: 800px;
+    position: relative;
+}
+
+
+.image img {
+    width: 100vw;
+    height: 260px;
+}
+
+
+.title {
+    position: absolute;
+    left: 45.5%;
+    top: 4%;
+}
+
+.title h2 {
+    color: red;
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    width: 1140px;
+    position: absolute;
+    gap: 39px;
+    top: 15.2%; 
+    left: 12%
+}
+
+.grid1 .gird2 .gird3 {
+    color: white;
+}
+
