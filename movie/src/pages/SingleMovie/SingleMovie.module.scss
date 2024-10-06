@@ -1,0 +1,229 @@
+.container {
+    min-height: 2159px;
+    background-color: #f9f9f9;
+}
+
+.poster {
+    width: 35%;
+    margin-right: 20px;
+}
+
+.poster img {
+    width: 360px;
+    height: 618px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    width: 100%;
+    height: 330px;
+    color: #c1baba;
+    background: -webkit-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.91) 0%,
+        rgba(0, 0, 0, 0.06) 85%,
+        rgba(0, 0, 0, 0.01) 100%
+    );
+}
+
+.details h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.details .info {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.details .info span {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #ff9900;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.details .info p {
+    margin: 5px 0;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+.synopsis {
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 70px;
+    width: 750px;
+    font-size: 18px;
+    position: absolute;
+    right: 11.6%;
+}
+
+.synopsis h2 {
+    color: #ff9900;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+.synopsis p {
+    font-size: 14px;
+}
+
+.synopsis hr {
+    color: #f9f9f9;
+}
+
+.share {
+    margin-top: 20px;
+    position: absolute;
+    right: 10.7%;
+}
+.share span {
+    font-size: 15px;
+}
+
+.share a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.Imgtitle img {
+    height: 576px;
+    width: 100vw;
+}
+
+.wrapper {
+    display: flex;
+    position: absolute;
+    left: 11.5%;
+    top: 39%;
+    gap: 72px;
+}
+
+.photo {
+    min-height: 266px;
+    min-width: 1140px;
+    margin-top: 425px;
+    
+    
+}
+
+.photo h1 {
+    color: #ff9900;
+    margin-left: 175px;
+    margin-bottom: 30px;
+}
+
+
+.imageSliderCcontainer {
+    margin: 0 auto;
+    width: 1140px;
+}
+
+
+.imageSliderCcontainer img {
+    width: 270px;
+    height: 200px;   
+}
+
+/* SingleMovie.module.scss */
+
+.showtime {
+    margin-left: 173px;
+    margin-top: 40px;
+    
+    width: 1140px;
+    position: relative;
+}
+
+.showtime h1 {
+    margin-bottom: 25px;
+}
+
+.cinema {
+    background: #e1dede;
+    width: 27%;
+    float: left;
+}
+
+.cinema ul {
+    margin: 0;
+    padding: 20px 0;
+    border-top: 2px solid #fff;
+}
+
+.schedual {
+   position: absolute;
+   top: 6.5%;
+   left: 28.5%;
+   
+   min-width: 780px;
+   background-color: #e1dede;
+   margin-top: 60px;
+}
+
+
+.lii {
+    list-style: none;
+    padding: 0 25px;
+    color: #858282;
+    
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.lii:hover {
+    background-color: #b9a1a1;
+}
+
+
+
+
+.select h4 {
+    background: transparent url("http://demo.amytheme.com/movie/demo/elementor-multi-cinema/wp-content/themes/amy-movie/images/frontend/icon-cinema.png") no-repeat scroll 0 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    height: 23px;
+    line-height: 24px;
+    margin: 15px 25px;
+    padding-left: 35px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+:global {
+    /* Tạo màu đen cho mũi tên trái */
+    .slick-prev:before {
+        color: black;
+    }
+
+    /* Tạo màu đen cho mũi tên phải */
+    .slick-next:before {
+        color: black;
+    }
+
+    /* Tùy chỉnh kích thước mũi tên */
+    .slick-prev, .slick-next {
+        font-size: 30px;
+        
+    }
+}

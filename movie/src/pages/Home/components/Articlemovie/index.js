@@ -1,5 +1,4 @@
 import styles from './Articlemovie.module.scss';
-import onimgstyles from '~/components/Layout/Bigimg/bigimg.module.scss'
 import { articleitem } from './Api';
 function Articlemovie() {
     return (

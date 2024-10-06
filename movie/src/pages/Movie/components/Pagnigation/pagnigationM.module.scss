@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    
+}
+.imgContent img {
+    width: 205px;
+    height: 347px;
+}
+.EachMovie {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 39px; 
+}
+
+.topMovie {
+    flex:3;
+}
+
+
+.Movies {
+    flex:7;
+}
+
+.sideEachMovie {
+    display: flex;
+    padding-bottom: 12px;
+    gap:13px;
+}
+
+.sideContent span {
+    display: block;
+}
+
+.imgSideContent img {
+    width: 118px;
+    height: 159px;
+}
+
+
+
+.smallContent p {
+    font-weight: bold;
+    
+}
+
+.smallContent a {
+    font-weight: normal;
+    
+}
+
+.pagenigation {
+    display: block;
+}

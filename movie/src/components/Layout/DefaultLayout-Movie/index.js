@@ -5,17 +5,17 @@ import Home from '~/pages/Home';
 import Movie from '~/pages/Movie';
 import PaginatedItems from '~/pages/Movie/components/Pagnigation';
 import SingleMovie from '~/pages/SingleMovie';
-import Showtime from '~/pages/Showtime';
-function DefaultLayouts() {
+
+function DefaultLayoutsMovie() {
     return (
         <div className= {layoutmodule.wrapper}>
-            <Header/>
+            <Header />
             <div className={layoutmodule.Content}>
-                <Home />
+                <Movie />
             </div>
             <Footer />
         </div>
     );
 }
 
-export default DefaultLayouts;
+export default DefaultLayoutsMovie;
